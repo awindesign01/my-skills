@@ -1,0 +1,63 @@
+.header {
+	width: 100%;
+	height: 3rem;
+	@include md {
+		height: 4rem;
+	}
+	background-color: transparent;
+	@include display_center;
+	nav {
+		width: 50%;
+		height: 100%;
+	}
+	.nav_left {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		h1 {
+			margin-left: 10px;
+			@include font_s_w_c(1.2em, 700, $fourColor) {
+				letter-spacing: 1px;
+			}
+			@include md {
+				@include font_s_w_c(1.5em, 700, $fourColor) {
+					letter-spacing: 2px;
+				}
+			}
+		}
+      @include ph{
+         .nav_link{
+            display: none;
+         }
+      }
+      @include md{
+         .nav_link{
+            display: block;
+            margin-left: 2rem;
+            width: auto;
+            height: 100%;
+            background-color: red;
+         }
+      }
+	}
+	.nav_right {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		@include ph {
+			button {
+				margin-right: 10px;
+				@include button_w_h_bgc_r_fs_fw_fc(auto, 100%, transparent, none, 1.7em, auto, $fourColor) {
+					@include display_center;
+					cursor: pointer;
+					border: none;
+				}
+			}
+		}
+		@include md {
+			button {
+				display: none;
+			}
+		}
+	}
+}

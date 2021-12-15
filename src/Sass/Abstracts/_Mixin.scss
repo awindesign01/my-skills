@@ -1,0 +1,55 @@
+@mixin font_s_w_c($font-size, $font-weight, $color) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+	@content;
+}
+@mixin button_w_h_bgc_r_fs_fw_fc(
+	$width,
+	$height,
+	$bg_color,
+	$rounded,
+	$font-size,
+	$font-weight,
+	$color
+) {
+	width: $width;
+	height: $height;
+	background-color: $bg_color;
+	border-radius: $rounded;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+	@content;
+}
+@mixin display_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@content;
+}
+@mixin ph {
+	@media (max-width: 640px) {
+		@content;
+	}
+}
+@mixin md {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin lg {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+@mixin xl {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+@mixin xxl {
+	@media (min-width: 1536px) {
+		@content;
+	}
+}
