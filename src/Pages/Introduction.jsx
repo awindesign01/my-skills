@@ -1,5 +1,5 @@
 const Introduction = () => {
-   return <nav>Introduction</nav>;
+   return <nav className="text-white">Introduction</nav>;
 }
  
 export default Introduction;

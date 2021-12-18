@@ -1,4 +1,20 @@
-@import "./Sass/Main/Main.scss";
+@tailwind base;
+@layer base {
+	h1 {
+		@apply text-2xl m-0 p-0;
+	}
+	h2 {
+		@apply text-xl;
+	}
+	h3 {
+		@apply text-lg;
+	}
+	a {
+		@apply text-white outline-none;
+	}
+}
+@tailwind components;
+@tailwind utilities;
 html,
 body {
 	margin: 0;
@@ -9,20 +25,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 100%;
-	background-color: #fff;
+	/* background-color: #fff; */
 	color: #202020;
 	line-height: 1;
-}
-h1 {
-	margin: 0;
 }
 ol,
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-a {
-	color: auto;
-	text-decoration: none;
 }
