@@ -1,5 +1,5 @@
-const Skills = () => {
+const Links = () => {
    return <nav>Skills</nav>;
 }
  
-export default Skills;
+export default Links;

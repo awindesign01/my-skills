@@ -10,7 +10,7 @@
 		@apply text-lg;
 	}
 	a {
-		@apply text-white outline-none;
+		@apply outline-none;
 	}
 }
 @tailwind components;
@@ -20,12 +20,12 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 100%;
-	/* background-color: #fff; */
+	/* background-color: #fcfcfc; */
 	color: #202020;
 	line-height: 1;
 }
