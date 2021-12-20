@@ -1,17 +1,20 @@
+import React from "react";
 import { FiMenu } from "react-icons/fi";
 import { NavLink, Link } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import { FiCode } from "react-icons/fi";
-import { CgHome, CgFileDocument } from "react-icons/cg";
+import { CgHome } from "react-icons/cg";
+import ShowMenu from "../Components/ShowMenu";
 
 const links = [
 	{ to: "/", textLink: "Home", icon: <CgHome /> },
 	{ to: "/about", textLink: "About", icon: <FaRegUser /> },
-	{ to: "/portfolio", textLink: "Portfolio", icon: <CgFileDocument /> },
 	{ to: "/skills", textLink: "Skills", icon: <FiCode /> },
 ];
 
 const Header = () => {
+	const [IsShow, setIsShow] = React.useState(false);
+
 	return (
 		<header className="header w-full h-[7vh] flex justify-between items-center">
 			<nav className="nav_left block w-1/2 md:w-full h-full md:flex md:justify-between md:items-center">
@@ -47,8 +50,8 @@ const Header = () => {
 				</nav>
 			</nav>
 			<nav className="nav_right md:hidden w-1/2 md:w-0 h-full flex justify-end items-center">
-				<button className="pr-2">
-					<FiMenu className="icon_menu h-full text-2xl text-white" />
+				<button className="pr-2" onClick={() => setIsShow(!IsShow)}>
+					{IsShow ? <ShowMenu /> : <FiMenu className="icon_menu h-full text-2xl text-gray-700" />}
 				</button>
 			</nav>
 		</header>

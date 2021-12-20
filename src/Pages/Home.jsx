@@ -1,8 +1,6 @@
 import { TiArrowDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { Tooltip } from "antd";
-import "antd/dist/antd.css";
 
 const Introduction = () => {
 	return (
@@ -29,27 +27,21 @@ const Introduction = () => {
 				</nav>
 				<nav className="mx-auto w-[95%] h-[20%] lg:h-[10%] ">
 					<nav className="w-1/3 md:w-1/5 lg:w-1/3 h-full flex justify-between items-center text-xl">
-						<Tooltip placement="top" title="instagram" color={"rgb(55 65 81)"}>
-							<Link to="#">
-								<nav className=" w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
-									<FaInstagram />
-								</nav>
-							</Link>
-						</Tooltip>
-						<Tooltip placement="top" title="Linkedin" color={"rgb(55 65 81)"}>
-							<Link to="#">
-								<nav className="w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
-									<FaLinkedinIn />
-								</nav>
-							</Link>
-						</Tooltip>
-						<Tooltip placement="top" title="Github" color={"rgb(55 65 81)"}>
-							<Link to="#">
-								<nav className="w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
-									<FaGithub />
-								</nav>
-							</Link>
-						</Tooltip>
+						<a href="https://www.instagram.com/awin.design/">
+							<nav className=" w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
+								<FaInstagram />
+							</nav>
+						</a>
+						<a href="https://www.linkedin.com/in/ali-asghar-donyaee-54b596208/">
+							<nav className="w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
+								<FaLinkedinIn />
+							</nav>
+						</a>
+						<a href="https://github.com/awindesign01">
+							<nav className="w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
+								<FaGithub />
+							</nav>
+						</a>
 					</nav>
 				</nav>
 			</nav>
