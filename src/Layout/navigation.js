@@ -3,13 +3,14 @@ import { FiMenu } from "react-icons/fi";
 import { NavLink, Link } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import { FiCode } from "react-icons/fi";
-import { CgHome } from "react-icons/cg";
+import { CgHome, CgWorkAlt } from "react-icons/cg";
 import ShowMenu from "../Components/ShowMenu";
 
 const links = [
 	{ to: "/", textLink: "Home", icon: <CgHome /> },
 	{ to: "/about", textLink: "About", icon: <FaRegUser /> },
 	{ to: "/skills", textLink: "Skills", icon: <FiCode /> },
+	// { to: "/work-sample", textLink: "work sample", icon: <CgWorkAlt /> },
 ];
 
 const Header = () => {

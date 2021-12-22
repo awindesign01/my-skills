@@ -21,11 +21,11 @@ const Introduction = () => {
 							</button>
 						</Link>
 						<nav className="transform -rotate-90">
-							<TiArrowDown className="mt-6 text-4xl animate-bounce" />
+							<TiArrowDown className="mt-6 text-4xl" />
 						</nav>
 					</nav>
 				</nav>
-				<nav className="mx-auto w-[95%] h-[20%] lg:h-[10%] ">
+				<nav className="mx-auto w-[95%] h-[20%] lg:h-[10%] flex justify-between items-center">
 					<nav className="w-1/3 md:w-1/5 lg:w-1/3 h-full flex justify-between items-center text-xl">
 						<a href="https://www.instagram.com/awin.design/">
 							<nav className=" w-10 h-10 grid place-items-center rounded-md bg-gray-700 text-white">
@@ -42,6 +42,10 @@ const Introduction = () => {
 								<FaGithub />
 							</nav>
 						</a>
+					</nav>
+					<nav className="flex items-center">
+						<TiArrowDown className="text-3xl text-gray-500 transform rotate-90" />
+						<p className="text-lg text-gray-500 font-bold">My ways of communication</p>
 					</nav>
 				</nav>
 			</nav>
